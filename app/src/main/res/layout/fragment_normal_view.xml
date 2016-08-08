@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <ImageButton
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ibtn_love"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:tint="@android:color/darker_gray"
+        app:srcCompat="@drawable/ic_favorite_black_24dp"
+        />
+
+
+    <!--flat Button-->
+    <Button
+        android:id="@+id/btn_cancel"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ibtn_love"
+        android:layout_marginTop="20dp"
+        android:text="CANCEL"
+        android:textColor="@android:color/darker_gray"/>
+
+    <Button
+        android:id="@+id/confrim"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ibtn_love"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/btn_cancel"
+        android:text="CONFRIM"
+        android:textColor="@color/colorPrimary"/>
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ibtn_love"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/confrim"
+        android:text="自定义"
+        android:theme="@style/FlatButtonStyle"
+        android:textColor="@color/colorPrimary"/>
+
+</RelativeLayout>
