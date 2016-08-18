@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity
             startActivity(new Intent(MainActivity.this, FullScreenActivity.class));
 
         } else if (id == R.id.nav_manage) {
-
+            startActivity(new Intent(MainActivity.this, FullImageViewActivity.class));
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
