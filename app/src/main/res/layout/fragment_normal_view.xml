@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <ImageButton
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <ImageButton xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/ibtn_love"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:tint="@android:color/darker_gray"
-        app:srcCompat="@drawable/ic_favorite_black_24dp"
-        />
+        app:srcCompat="@drawable/ic_favorite_black_24dp" />
 
 
     <!--flat Button-->
@@ -24,7 +22,7 @@
         android:layout_below="@+id/ibtn_love"
         android:layout_marginTop="20dp"
         android:text="CANCEL"
-        android:textColor="@android:color/darker_gray"/>
+        android:textColor="@android:color/darker_gray" />
 
     <Button
         android:id="@+id/confrim"
@@ -36,7 +34,7 @@
         android:layout_marginTop="20dp"
         android:layout_toEndOf="@id/btn_cancel"
         android:text="CONFRIM"
-        android:textColor="@color/colorPrimary"/>
+        android:textColor="@color/colorPrimary" />
 
     <Button
         style="@style/Widget.AppCompat.Button.Borderless"
@@ -47,7 +45,32 @@
         android:layout_marginTop="20dp"
         android:layout_toEndOf="@id/confrim"
         android:text="自定义"
-        android:theme="@style/FlatButtonStyle"
-        android:textColor="@color/colorPrimary"/>
+        android:textColor="@color/colorPrimary"
+        android:theme="@style/FlatButtonStyle" />
+
+    <ImageView
+        android:id="@+id/p1"
+        android:elevation="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_cancel" />
+
+    <ImageView
+        android:id="@+id/p2"
+        android:elevation="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_cancel"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/p1" />
+
+    <ImageView
+        android:id="@+id/p3"
+        android:elevation="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_cancel"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/p2" />
 
 </RelativeLayout>
