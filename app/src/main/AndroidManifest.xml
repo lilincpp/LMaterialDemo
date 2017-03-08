@@ -26,10 +26,11 @@
                 android:value=".activity.MainActivity"/>
         </activity>
 
-        <activity android:name=".io.FullScreenActivity"/>
-        <activity android:name=".io.FullScreenActivity2"
+        <activity android:name=".shareAnim.FullScreenActivity"/>
+        <activity android:name=".shareAnim.FullScreenActivity2"
             />
         <activity android:name=".activity.FullImageViewActivity"/>
+        <activity android:name=".pathAnim.PathAnimActivity"/>
     </application>
 
 </manifest>

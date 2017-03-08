@@ -20,7 +20,8 @@ import android.view.MenuItem;
 
 import lilincpp.lmaterialdemo.R;
 import lilincpp.lmaterialdemo.fragment.NormalViewFragment;
-import lilincpp.lmaterialdemo.io.FullScreenActivity;
+import lilincpp.lmaterialdemo.pathAnim.PathAnimActivity;
+import lilincpp.lmaterialdemo.shareAnim.FullScreenActivity;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -88,23 +89,22 @@ public class MainActivity extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-            // Handle the camera action
             translate(new NormalViewFragment());
         } else if (id == R.id.nav_gallery) {
             startActivity(new Intent(MainActivity.this, FullAppbarActivity.class));
         } else if (id == R.id.nav_slideshow) {
             startActivity(new Intent(MainActivity.this, FullScreenActivity.class));
-
         } else if (id == R.id.nav_manage) {
             startActivity(new Intent(MainActivity.this, FullImageViewActivity.class));
         } else if (id == R.id.nav_share) {
             Log.e(TAG, "onNavigationItemSelected: nav_share" );
         } else if (id == R.id.nav_send) {
             Log.e(TAG, "onNavigationItemSelected: nav_send" );
+        } else if (id==R.id.nav_path){
+            startActivity(new Intent(MainActivity.this, PathAnimActivity.class));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
