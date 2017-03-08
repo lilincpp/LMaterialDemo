@@ -3,22 +3,23 @@ package lilincpp.lmaterialdemo.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.util.Log;
-import android.view.View;
-import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import lilincpp.lmaterialdemo.R;
+import lilincpp.lmaterialdemo.bottomNavigation.BottomNavigationActivity;
 import lilincpp.lmaterialdemo.fragment.NormalViewFragment;
 import lilincpp.lmaterialdemo.pathAnim.PathAnimActivity;
 import lilincpp.lmaterialdemo.shareAnim.FullScreenActivity;
@@ -100,11 +101,13 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_manage) {
             startActivity(new Intent(MainActivity.this, FullImageViewActivity.class));
         } else if (id == R.id.nav_share) {
-            Log.e(TAG, "onNavigationItemSelected: nav_share" );
+            Log.e(TAG, "onNavigationItemSelected: nav_share");
         } else if (id == R.id.nav_send) {
-            Log.e(TAG, "onNavigationItemSelected: nav_send" );
-        } else if (id==R.id.nav_path){
+            Log.e(TAG, "onNavigationItemSelected: nav_send");
+        } else if (id == R.id.nav_path) {
             startActivity(new Intent(MainActivity.this, PathAnimActivity.class));
+        } else if (id == R.id.nav_bottom) {
+            startActivity(new Intent(MainActivity.this, BottomNavigationActivity.class));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
