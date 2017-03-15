@@ -30,6 +30,10 @@
             android:id="@+id/custom_menu"
             android:icon="@drawable/ic_menu_manage"
             android:title="封装菜单" />
+        <item
+            android:id="@+id/custom_anim"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="封装动画框架" />
 
     </group>
 

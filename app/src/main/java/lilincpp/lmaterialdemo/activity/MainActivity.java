@@ -22,11 +22,11 @@ import lilincpp.lmaterialdemo.R;
 import lilincpp.lmaterialdemo.bottomNavigation.BottomNavigationActivity;
 import lilincpp.lmaterialdemo.customMenu.CustomMenuActivity;
 import lilincpp.lmaterialdemo.fragment.NormalViewFragment;
+import lilincpp.lmaterialdemo.linearAnimFramework.LinearAnimFrameworkActivity;
 import lilincpp.lmaterialdemo.pathAnim.PathAnimActivity;
 import lilincpp.lmaterialdemo.shareAnim.FullScreenActivity;
 
-public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private static final String TAG = "MainActivity";
 
@@ -41,14 +41,12 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show();
             }
         });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
@@ -109,8 +107,10 @@ public class MainActivity extends AppCompatActivity
             startActivity(new Intent(MainActivity.this, PathAnimActivity.class));
         } else if (id == R.id.nav_bottom) {
             startActivity(new Intent(MainActivity.this, BottomNavigationActivity.class));
-        }else if (id==R.id.custom_menu){
+        } else if (id == R.id.custom_menu) {
             startActivity(new Intent(MainActivity.this, CustomMenuActivity.class));
+        } else if (id == R.id.custom_anim) {
+            startActivity(new Intent(MainActivity.this, LinearAnimFrameworkActivity.class));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

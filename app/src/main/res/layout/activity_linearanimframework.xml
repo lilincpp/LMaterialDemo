@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lilincpp.lmaterialdemo.linearAnimFramework.framework.view.MyScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:my="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <lilincpp.lmaterialdemo.linearAnimFramework.framework.view.MyLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/photo3"
+           />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:padding="16dp"
+            android:gravity="center"
+            android:text="@string/msg"
+            android:textSize="24sp"
+            my:lilin_alpha="true"
+            my:lilin_translation="fromLeft|fromBottom"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/photo4"
+            android:scaleType="center"
+            my:lilin_alpha="true"
+            my:lilin_scaleX="true"
+            my:lilin_scaleY="true"
+            my:lilin_translation="fromRight|fromBottom"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:padding="16dp"
+            android:text="@string/msg2"
+            android:textSize="24sp"
+            my:lilin_scaleY="true"
+           />
+
+    </lilincpp.lmaterialdemo.linearAnimFramework.framework.view.MyLinearLayout>
+
+</lilincpp.lmaterialdemo.linearAnimFramework.framework.view.MyScrollView>
