@@ -91,11 +91,11 @@ public class CustomMenu extends View {
                 public void run() {
                     animListener.onEnd();
                 }
-            }, 320);
+            }, 640);
         }
         mode = MODE.UP;
         ValueAnimator animator = ValueAnimator.ofFloat(0, ARC_MAX_HEIGHT);
-        animator.setDuration(320);
+        animator.setDuration(640);
         animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
@@ -114,7 +114,7 @@ public class CustomMenu extends View {
     private void bounce() {
         mode = MODE.DOWN;
         ValueAnimator valueAnimator = ValueAnimator.ofFloat(ARC_MAX_HEIGHT, 0);
-        valueAnimator.setDuration(80);
+        valueAnimator.setDuration(160);
         valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {

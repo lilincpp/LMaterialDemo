@@ -68,7 +68,7 @@ public class CustomMenuManager {
         if (animShowing)
             return;
         animShowing = true;
-        ObjectAnimator objectAnimator = ObjectAnimator.ofFloat(rootView, "translationY", 0, rootView.getHeight()).setDuration(400);
+        ObjectAnimator objectAnimator = ObjectAnimator.ofFloat(rootView, "translationY", 0, rootView.getHeight()).setDuration(560);
         objectAnimator.addListener(new AnimatorListenerAdapter() {
             @Override
             public void onAnimationEnd(Animator animation) {
