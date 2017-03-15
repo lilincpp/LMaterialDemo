@@ -30,6 +30,7 @@
         <activity android:name=".activity.FullImageViewActivity" />
         <activity android:name=".pathAnim.PathAnimActivity" />
         <activity android:name=".bottomNavigation.BottomNavigationActivity" />
+        <activity android:name=".customMenu.CustomMenuActivity"/>
     </application>
 
 </manifest>

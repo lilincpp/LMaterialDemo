@@ -20,6 +20,7 @@ import android.view.View;
 
 import lilincpp.lmaterialdemo.R;
 import lilincpp.lmaterialdemo.bottomNavigation.BottomNavigationActivity;
+import lilincpp.lmaterialdemo.customMenu.CustomMenuActivity;
 import lilincpp.lmaterialdemo.fragment.NormalViewFragment;
 import lilincpp.lmaterialdemo.pathAnim.PathAnimActivity;
 import lilincpp.lmaterialdemo.shareAnim.FullScreenActivity;
@@ -108,6 +109,8 @@ public class MainActivity extends AppCompatActivity
             startActivity(new Intent(MainActivity.this, PathAnimActivity.class));
         } else if (id == R.id.nav_bottom) {
             startActivity(new Intent(MainActivity.this, BottomNavigationActivity.class));
+        }else if (id==R.id.custom_menu){
+            startActivity(new Intent(MainActivity.this, CustomMenuActivity.class));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
