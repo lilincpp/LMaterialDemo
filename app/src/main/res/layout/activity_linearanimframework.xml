@@ -19,15 +19,15 @@
            />
 
         <TextView
+            android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="300dp"
-            android:padding="16dp"
             android:gravity="center"
+            android:padding="16dp"
             android:text="@string/msg"
             android:textSize="24sp"
             my:lilin_alpha="true"
-            my:lilin_translation="fromLeft|fromBottom"
-            />
+            my:lilin_translation="fromLeft|fromBottom"/>
 
         <ImageView
             android:layout_width="match_parent"
