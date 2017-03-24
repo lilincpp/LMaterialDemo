@@ -34,6 +34,10 @@
             android:id="@+id/custom_anim"
             android:icon="@drawable/ic_menu_manage"
             android:title="封装动画框架" />
+        <item
+            android:id="@+id/custom_head"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="可拉伸的Head" />
 
     </group>
 

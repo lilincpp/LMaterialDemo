@@ -32,6 +32,7 @@
         <activity android:name=".bottomNavigation.BottomNavigationActivity"/>
         <activity android:name=".customMenu.CustomMenuActivity"/>
         <activity android:name=".linearAnimFramework.LinearAnimFrameworkActivity"/>
+        <activity android:name=".recycleviewHead.RecyclerviewActivity"/>
     </application>
 
 </manifest>
