@@ -1,19 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical">
+<lilincpp.lmaterialdemo.recycleviewHead.MyScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
 
-    <ImageView
-        android:id="@+id/imageview"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/image_height"
-        android:scaleType="centerCrop"
-        android:src="@drawable/test"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <lilincpp.lmaterialdemo.recycleviewHead.MyRecycleviewer
-        android:id="@+id/recyclerview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/head_height"
+            android:scaleType="centerCrop"
+            android:src="@drawable/test"/>
 
-</LinearLayout>
+
+        <lilincpp.lmaterialdemo.recycleviewHead.MyRecyclerview
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+</lilincpp.lmaterialdemo.recycleviewHead.MyScrollView>
