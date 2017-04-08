@@ -22,6 +22,7 @@ import lilincpp.lmaterialdemo.R;
 import lilincpp.lmaterialdemo.bottomNavigation.BottomNavigationActivity;
 import lilincpp.lmaterialdemo.customMenu.CustomMenuActivity;
 import lilincpp.lmaterialdemo.fragment.NormalViewFragment;
+import lilincpp.lmaterialdemo.linearAnimFramework.LinearAnimFrameworkActivity;
 import lilincpp.lmaterialdemo.pathAnim.PathAnimActivity;
 import lilincpp.lmaterialdemo.recycleviewHead.RecyclerviewActivity;
 import lilincpp.lmaterialdemo.shareAnim.FullScreenActivity;
@@ -113,6 +114,9 @@ public class MainActivity extends AppCompatActivity
             startActivity(new Intent(MainActivity.this, CustomMenuActivity.class));
         }else if (id==R.id.custom_head){
             startActivity(new Intent(MainActivity.this, RecyclerviewActivity.class));
+        }else if (id==R.id.custom_anim){
+            startActivity(new Intent(MainActivity.this, LinearAnimFrameworkActivity.class));
+
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
